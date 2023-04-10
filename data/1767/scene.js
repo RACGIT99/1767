@@ -21,7 +21,7 @@ app.loadJSONObject({
       "type": "layer",
       "id": 3,
       "properties": {
-        "name": "1767positionline",
+        "name": "Saxon church",
         "clickable": true,
         "visible": true,
         "type": "line",
