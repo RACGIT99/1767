@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>IHLSaxonChurch2</title>
+<title>1767project</title>
 <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 <base target="_blank">
 <link rel="stylesheet" type="text/css" href="./Qgis2threejs.css">
@@ -28,26 +28,7 @@
   <div id="popupbody">
     <div id="popupcontent"></div>
 
-    <!-- query result -->
-    <div id="queryresult">
-      <table id="qr_coords_table">
-        <caption>Clicked coordinates <div id="zoomtopoint" class="action-zoom zoombtn"></div></caption>
-        <tr><td id="qr_coords"></td></tr>
-      </table>
-
-      <table id="qr_layername_table">
-        <caption>Layer <div id="zoomtolayer" class="action-zoom zoombtn"></div></caption>
-        <tr><td id="qr_layername"></td></tr>
-      </table>
-
-      <table id="qr_attrs_table">
-        <caption>Attributes</caption>
-      </table>
-
-      <!-- camera actions and measure tool -->
-      <div id="orbitbtn" class="action-btn action-orbit">Orbit</div>
-      <div id="measurebtn" class="action-btn">Measure distance</div>
-    </div>
+    
 
     <!-- page info -->
     <div id="pageinfo">
@@ -88,21 +69,30 @@
 <div id="progress"><div id="progressbar"></div></div>
 
 <!-- header and footer -->
-<div id="header"></div>
+<div id="header"><FONT COLOR="#400ed1"> <b> 
+<p style="background-color:acquamarine;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The animation can be re-played from the Contol menu >>></p> </div>
 <div id="footer"></div>
 
 <!-- animation -->
 <div id="narrativebox" class="ef1">
   <div id="narbody">
-    <div id="nar_f941e68f" class="narcontent">
-      This map of 1767 is the earliest map of the town. The mapping is selective, focussing on the principal buildings and  streets. The church is not recognised as a significant structure.
+    <div id="nar_484b5182" class="narcontent">
+      This map of 1767 is the earliest map of the town. The mapping is selective, focussing on the principal buildings and streets. 
+    </div>
+    <div id="nar_15431776" class="narcontent">
+      The church is not recognised as a significant structure.
+    </div>
+    <div id="nar_08560d37" class="narcontent">
+      <h3>To return to main menu <a href="https://racgit99.github.io/SaxonChurch/">Press</a>  </h3>
+    </div>
+    <div id="nar_9e4a116b" class="narcontent">
+      &nbsp;&nbsp;&nbsp
     </div>
   </div>
   <div id="nextbtn"></div>
 </div>
 
 <script>
-Q3D.Config.bgColor = 0x000000;
 Q3D.Config.localMode = true;
 Q3D.Config.animation.enabled = true;
 Q3D.Config.animation.startOnLoad = true;
@@ -114,7 +104,7 @@ var container = document.getElementById("view"),
 app.init(container);    // initialize viewer
 
 // load the scene
-app.loadSceneFile("./data/1767/scene.js", function (scene) {
+app.loadSceneFile("./data/index/scene.js", function (scene) {
   // scene file has been loaded
   app.start();
 
