@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>1767 map</title>
+<title>1767project</title>
 <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 <base target="_blank">
 <link rel="stylesheet" type="text/css" href="./Qgis2threejs.css">
@@ -83,8 +83,14 @@
       The church is not recognised as a significant structure.
     </div>
     <div id="nar_08560d37" class="narcontent">
-     <button type="button" 
-           onclick="window.open('', '_self', ''); window.close();">Close window</button>      
+      <button type="button" 
+           onclick="window.open('', '_self', ''); window.close();">Close window</button>
+      
+      
+      
+      
+      
+    </div>
     <div id="nar_9e4a116b" class="narcontent">
       &nbsp;&nbsp;&nbsp
     </div>
@@ -93,7 +99,6 @@
 </div>
 
 <script>
-Q3D.Config.localMode = true;
 Q3D.Config.animation.enabled = true;
 Q3D.Config.animation.startOnLoad = true;
 
@@ -104,7 +109,7 @@ var container = document.getElementById("view"),
 app.init(container);    // initialize viewer
 
 // load the scene
-app.loadSceneFile("./data/index/scene.js", function (scene) {
+app.loadSceneFile("./data/index/scene.json", function (scene) {
   // scene file has been loaded
   app.start();
 
